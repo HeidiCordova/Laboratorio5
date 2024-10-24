@@ -42,17 +42,17 @@
 
     <TextView
         android:id="@+id/textDescription"
-        android:layout_width="254dp"
-        android:layout_height="57dp"
+        android:layout_width="283dp"
+        android:layout_height="99dp"
         android:gravity="center"
         android:text="Fue construida con ignimbrita (piedra de origen volcánico), y bóvedas de ladrillo; es el santuario principal de la ciudad ocupando todo el lado norte de la Plaza de Armas. Construida totalmente en sillar, exhibe un estilo neorrenacentista con cierta influencia gótica. Su fachada está constituida por setenta columnas con capiteles corintios, tres portadas y dos grandes arcos laterales. Está rematada por dos altas torres renacentistas y estilizadas."
         android:textColor="#000000"
-        android:textSize="7sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageCatedral"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        app:layout_constraintVertical_bias="0.014" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
