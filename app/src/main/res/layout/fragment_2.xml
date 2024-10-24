@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E95EC4F4"
     tools:context=".Fragment2">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#13CFE7"
-        android:orientation="vertical">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageCatedral"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Imagen de la Catedral"
+        android:scaleType="centerCrop"
+        android:src="@drawable/claustro"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is Fragment 2" />
-    </LinearLayout>
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="268dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Claustro de la compañia"
+        android:textColor="#FFA500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="254dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Los Claustros de la Compañía, construidos en el siglo XVII con sillar, representan el estilo barroco mestizo de Arequipa. El conjunto está formado por patios rodeados de arcos y columnas decoradas con motivos florales y religiosos. La arquitectura refleja una fusión de influencias españolas e indígenas, destacando por sus muros tallados y su valor histórico en el centro de la ciudad."
+        android:textColor="#000000"
+        android:textSize="7sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

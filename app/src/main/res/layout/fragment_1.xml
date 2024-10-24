@@ -7,12 +7,6 @@
     android:background="#E95EC4F4"
     tools:context=".Fragment1">
 
-    <!-- ImageView para la imagen de la catedral -->
-
-    <!-- TextView para el título -->
-
-    <!-- TextView para la descripción -->
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageCatedral"
         android:layout_width="100dp"
@@ -51,9 +45,9 @@
         android:layout_width="254dp"
         android:layout_height="57dp"
         android:gravity="center"
-        android:text="Fue construida con ignimbrita (piedra de origen volcánico)..."
+        android:text="Fue construida con ignimbrita (piedra de origen volcánico), y bóvedas de ladrillo; es el santuario principal de la ciudad ocupando todo el lado norte de la Plaza de Armas. Construida totalmente en sillar, exhibe un estilo neorrenacentista con cierta influencia gótica. Su fachada está constituida por setenta columnas con capiteles corintios, tres portadas y dos grandes arcos laterales. Está rematada por dos altas torres renacentistas y estilizadas."
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="7sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
