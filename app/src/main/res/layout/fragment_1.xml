@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E95EC4F4"
+    tools:context=".Fragment1">
+
+    <!-- ImageView para la imagen de la catedral -->
+
+    <!-- TextView para el título -->
+
+    <!-- TextView para la descripción -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageCatedral"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Imagen de la Catedral"
+        android:scaleType="centerCrop"
+        android:src="@drawable/catedral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="268dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Catedral de Arequipa"
+        android:textColor="#FFA500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="254dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Fue construida con ignimbrita (piedra de origen volcánico)..."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/imageCatedral"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.014" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
